@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吃瓜主页</title>
+</head>
+<body>
+    <h1>Hello {{username}}</h1>
+    <img src="{{ url_for('static', filename='doge.gif') }}"/>
+    <img src="{{ url_for('static', filename='doge1.jpg') }}"/>
+    <img src="{{ url_for('static', filename='doge2.gif') }}"/>
+    <br>
+    <a href="{{ url_for('user.login') }}">Login</a>
+    <a href="{{ url_for('user.register') }}">Register</a>
+    <a href="{{ url_for('todo.index') }}">Todo</a>
+    <a href="{{ url_for('weibo.index') }}">Weibo</a>
+</body>
+</html>

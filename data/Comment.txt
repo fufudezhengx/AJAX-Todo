@@ -1,0 +1,18 @@
+[
+  {
+    "updated_time": 1501919078,
+    "id": 1,
+    "weibo_id": 1,
+    "user_id": 0,
+    "created_time": 1501919078,
+    "content": " 第二个评论"
+  },
+  {
+    "updated_time": 1504080766,
+    "id": 2,
+    "weibo_id": 0,
+    "user_id": 0,
+    "created_time": 1504080766,
+    "content": "11"
+  }
+]

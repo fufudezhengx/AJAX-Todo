@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AJAX  Flask  Todo </title>
+
+         <style  type="text/css">
+
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="gua-center">TODO List</h1>
+        <br>
+        <div class="gua-center">
+            <input id='id-input-todo' class="pure-form" placeholder="Write TODO">
+            <button id='id-button-add' class="button-small pure-button pure-button-primary">添加</button>
+        </div>
+        <br>
+        <table class="pure-table pure-table-bordered gua-center-block">
+            <thead>
+                <tr>
+                    <th>TODO</th>
+                    <th>Create Time</th>
+                    <th>编辑</th>
+                    <th>删除</th>
+                 </tr>
+            </thead>
+            <tbody id="id-todo-list">
+
+            </tbody>
+        </table>
+
+        <!-- 这是我们处理静态文件的套路 -->
+        <!-- gua.js 放了公共的函数 -->
+        <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+        <script src="{{ url_for('static', filename='gua.js') }}"></script>
+        <script src="{{ url_for('static', filename='todo.js') }}"></script>
+    </body>
+
+
+    <!-- 引用外部 CSS -->
+    <link href="{{ url_for('static', filename='pure.css')  }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='gua.css') }}" rel="stylesheet">
+</html>

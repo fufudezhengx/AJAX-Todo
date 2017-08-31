@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div >
+        <img   src="{{ url_for('static', filename='404.png') }}">
+    </div>
+    <script language="javascript">
+
+        setTimeout(function(){
+            window.location = "{{ url_for('static.index') }}";
+        }, 5000);
+
+    </script>
+
+</body>
+</html>

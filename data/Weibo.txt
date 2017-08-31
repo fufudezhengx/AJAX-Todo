@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "content": "第一个微博",
+    "created_time": 1501916466,
+    "updated_time": 1501916491,
+    "user_id": 0
+  },
+  {
+    "id": 1,
+    "content": "第二个微博",
+    "created_time": 1501919070,
+    "updated_time": 1501919070,
+    "user_id": 0
+  }
+]

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weibo ajax</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="gua-center">微博</h1>
+
+    <div class="gua-center">
+        <input id='id-input-weibo' class="pure-form">
+        <button id='id-button-add' class="button-small pure-button pure-button-primary">添加</button>
+    </div>
+
+    <div class="gua-center">
+        <table>
+            <thead>
+                <tr>
+                    <th>微博</th>
+                    <th>编辑</th>
+                    <th>删除</th>
+                    <th>添加评论</th>
+                 </tr>
+            </thead>
+            <tbody id="id-weibo-list">
+
+            </tbody>
+
+        </table>
+
+    </div>
+    <!-- 这是我们处理静态文件的套路 -->
+    <!-- gua.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src="{{ url_for('static', filename='gua.js') }}"></script>
+    <script src="{{ url_for('static', filename='weibo.js') }}"></script>
+    <script src="{{ url_for('static', filename='comment.js') }}"></script>
+</body>
+    <!-- 引用外部 CSS -->
+    <link href="{{ url_for('static', filename='pure.css')  }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='gua.css') }}" rel="stylesheet">
+</html>
